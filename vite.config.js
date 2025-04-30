@@ -9,11 +9,7 @@ export default defineConfig({
         }),
     ],
     css: {
-        postcss: {
-            plugins: {
-                tailwindcss: {},
-                autoprefixer: {},
-            },
-        },
+        postcss: './postcss.config.js', // Explicitly reference the PostCSS config
     },
 });
+
